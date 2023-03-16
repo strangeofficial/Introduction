@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------Navbar CSS--------- */
+
+.navbar-brand{
+    letter-spacing: 0.099rem;
+    font-weight: bold;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    letter-spacing: 0.055rem;
+    padding: 1rem;
+}
+.navbar .navbar-nav .nav-link::after { 
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ffb32f;
+    margin: auto;
+    display: block;
+    font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover::after { 
+    width: 100%;
+    transition: width 0.3 linear;
+    color: #ffb32f;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #ffb32f;
+}
+
+/* -----------Home section------------ */
+
+#home{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.animation-body{
+  color: #fff;
+  margin-top: 200px;
+  margin-left: 80px;
+}
+.auto-type{
+  color: #ffb32f;
+}
+
+/* --------aboout section-------- */
+
+#about{
+    background-color: #404040;
+    color: #fff;
+    padding: 40px 0;
+}
+.title{
+    color: #ffb32f;
+    font-size: 22px;
+}
+#about h1{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.about-text2{
+    padding-top: 40px;
+    text-align: justify;
+}
+
+.img-fluid{
+    border-radius: 50%;
+    width: 65%;
+}
+
+/* ---------skill section------ */
+
+#skill{
+    padding: 40px 0;
+    background-color: #121212;
+    color: #fff;
+}
+#skill h1{
+    font-weight: 6000;
+    letter-spacing: 2px;
+}
+#skill p{
+    margin-top: 20px;
+}
+.skill-text2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.skill-row-box{
+  padding-top: 20px;
+}
+
+
+  .heading {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .skill {
+    margin-bottom: 1rem;
+  }
+  
+  .skill:last-child {
+    margin-bottom: 0;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bar {
+    background: #cecfec;
+    border-radius: 0px;
+    height: 1rem;
+    overflow: hidden;
+  }
+  
+  .html-bar,
+  .css-bar,
+  .javascript-bar,
+  .PHP-bar,
+  .Python-bar {
+    width: 0;
+    height: inherit;
+    background: linear-gradient(135deg, #ffb32f, #fab949);
+  }
+  
+  .html-bar {
+    animation: html-fill 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes html-fill {
+    100% {
+      width: 96%;
+    }
+  }
+  
+  .css-bar {
+    animation: css-fill 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes css-fill {
+    100% {
+      width: 85%;
+    }
+  }
+  
+  .javascript-bar {
+    animation: javascript-fill 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes javascript-fill {
+    100% {
+      width: 71%;
+    }
+  }
+  .PHP-bar {
+    animation: PHP-fill 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes PHP-fill {
+    100% {
+      width: 61%;
+    }
+  }
+  .Python-bar {
+    animation: Python-fill 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes Python-fill {
+    100% {
+      width: 51%;
+    }
+  }
+
+/* -----------services section -------- */
+
+#services{
+    padding: 40px 0;
+    background-color: #404040;
+    color: #fff;
+}
+.card{
+    background-color: #121212;
+}
+.card-header{
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 300px;
+    transform: translateY(30px);
+}
+.card-title{
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.card-body img{
+    width: 100px;
+    padding: 40px 0;
+}
+
+
+/* ------contact section---------- */
+#contact{
+  background-color: #121212;
+  color: #fff;
+  padding: 40px 0;
+  overflow: hidden;
+}
+#contact h1{
+  padding-bottom: 20px;
+}
+
+.social-icons a:hover{
+  transform: translateY(-5px);
+}
+.social-icons{
+  margin-top: 30px;
+}
+.fa {
+  padding: 0 30px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-facebook, .fa-instagram, .fa-dribbble {
+  color: #fff;
+}
+
+input[type=text],[type=email]{
+  background-color: #121212;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+textarea{
+  background-color: #121212;
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.btn{
+  background-color: #ffb32f;
+  border-radius: 0px;
+  overflow: auto;
+  float: left;
+}
